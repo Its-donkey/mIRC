@@ -1,0 +1,29 @@
+# Logs and Databases #
+######################
+*.log
+logs/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dev notes and Debugging#
+##########################
+Dev notes/
+#*debug*
+.vscode/
+
+# Sensitive Information #
+#########################
+credentials.ini
+
+# Temporary Files #
+###################
+*.tm_
+Moose/
