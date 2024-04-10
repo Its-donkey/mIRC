@@ -18,10 +18,6 @@ on *:START: {
   if (%taskNumber == $null) {
     writeini mirc.ini Discord TaskNumber 1
   }
-  else {
-    inc %taskNumber 1
-    writeini mirc.ini Discord TaskNumber %taskNumber
-  }
 }
 
 on *:TEXT:!todo*:#moosedoesstuff: {
