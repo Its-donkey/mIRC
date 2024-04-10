@@ -1,4 +1,4 @@
-alias checkAndConnect {
+alias TwitchCheckAndConnect {
   var %tusername = $readini(credentials.ini, n, Twitch, Username)
   if (%tusername == $null) {
     %tusername = $input(Enter your Twitch username,e,,"Twitch Username",)
@@ -17,12 +17,6 @@ alias checkAndConnect {
   if ((%tusername != $null) && (%toauth != $null)) {
     server irc.chat.twitch.tv 6667 %oauthToken -i %twitchUsername
   }
-}
-
-; You might want to call this alias from an on start event or manually.
-; To connect automatically when mIRC starts, use the on START event:
-on *:START:{
-  checkAndConnect
 }
 
 
